@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fffebb;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #8b8507;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.lontra-container img {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.lontra-container img:active {
+    transform: scale(1.1);
+}
+
+.counter-container {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+h1 {
+    color: #0A4166;
+    margin-bottom: 20px;
+}
+
+.market-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.item {
+    margin-top: 20px;
+}

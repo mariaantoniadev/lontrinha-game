@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker de Lontra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Carinhos na Lontrinha!</h1>
+            <div class="lontra-container">
+                <img id="lontra" src="lontrasleep.png" alt="Lontra fofa" />
+            </div>
+            <div class="counter-container">
+                <h2>Carinhos: <span id="carinho-counter">0</span></h2>
+                <h2>Lontramor: <span id="lontramor-counter">0</span></h2>
+            </div>
+        </div>
+
+        <div class="market-container">
+            <h2>Mercado</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Comprar</th>
+                        <th>Carinhos Por Segundo</th>
+                        <th>Produto</th>
+                        <th>Lontramores</th>
+                        <th>Stok</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button class="buy-btn" data-product="hands"><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-hands">0.2 CPS</td>
+                        <td>Cutuques</td>
+                        <td>10</td>
+                        <td><span class="product-counter" id="hands-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="snacks" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-snacks">0.4 CPS</td>
+                        <td>Mãos Ásperas</td>
+                        <td>20</td>
+                        <td><span class="product-counter" id="snacks-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="bathtub" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-bathtub">2.0 CPS</td>
+                        <td>Mãozinhas Sujinhas</td>
+                        <td>30</td>
+                        <td><span class="product-counter" id="bathtub-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="adventure" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-adventure">2.5 CPS</td>
+                        <td>Mãozinhas Limpinhas</td>
+                        <td>50</td>
+                        <td><span class="product-counter" id="adventure-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="sofa" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-sofa">1.5 CPS</td>
+                        <td>Mãozinhas de Panda</td>
+                        <td>60</td>
+                        <td><span class="product-counter" id="sofa-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="pebbles" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-pebbles">1.8 CPS</td>
+                        <td>Mãozinhas de Lontra</td>
+                        <td>80</td>
+                        <td><span class="product-counter" id="pebbles-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="toys" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-toys">0.6 CPS</td>
+                        <td>Mãozinhas de Creminho</td>
+                        <td>100</td>
+                        <td><span class="product-counter" id="toys-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="towels" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-towels">0.8 CPS</td>
+                        <td>Mãozinhas de Nenê</td>
+                        <td>200</td>
+                        <td><span class="product-counter" id="towels-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="pool" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-pool">1.0 CPS</td>
+                        <td>Mãozinhas Amorosas</td>
+                        <td>300</td>
+                        <td><span class="product-counter" id="pool-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="trip" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-trip">1.2 CPS</td>
+                        <td>Mãozinhas de Cócegas</td>
+                        <td>500</td>
+                        <td><span class="product-counter" id="trip-counter">0</span></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buy-btn" data-product="castle" disabled><img src="" alt="mãozinhas"></button></td>
+                        <td id="cps-castle">3.0 CPS</td>
+                        <td>Melhores Mãozinhas do Mundo</td>
+                        <td>1000</td>
+                        <td><span class="product-counter" id="castle-counter">0</span></td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
